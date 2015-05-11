@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>websocket 聊天</title>
+		<script src="../../js/lib/require.js" data-main="../../js/socketChat/main" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.chatbox {
+				width: 580px;
+				position: absolute;
+				border: 1px solid;
+				font-family: "微软雅黑";
+			}
+			#chat {
+				position: relative;
+				float: left;
+				width: 420px;
+				margin: 0 auto;
+				border: 1px solid;
+				margin: -1px;
+			}
+			#recive {
+				padding: 4% 1%;
+				border: 1px solid;
+				width: 98%;
+				height: 200px;
+				max-height: 200px;
+				overflow-y: auto;
+				margin: -1px;
+			}
+			#send {
+				border: 1px solid;
+				width: 100%;
+				height: 100px;
+				margin: -1px;
+			}
+			.btns {
+				float: right;
+			}
+			#input {
+				margin: -1px;
+				padding: 0px;
+				width: 100%;
+				height: 100px;
+				align-content: center;
+				resize: none;
+				border: 1px solid black;
+			}
+			.left {
+				position: relative;
+				clear: both;
+				float: left;
+				
+			}
+			.right {
+				position: relative;
+				clear: both;
+				float: right;
+				font-family: "微软雅黑";
+			}
+			.leftUser {
+				float: left;
+			}
+			.leftMsg {
+				color: brown;
+				padding: 0 5px;
+				max-width: 260px;
+				border: 1px solid gray;
+				border-radius: 8px;
+				-moz-border-radius: 8px;
+				word-wrap: break-word;
+				float: left;
+			}
+			.rightUser {
+				float: right;
+			}
+			.rightMsg {
+				float: right;
+				color: green;
+				padding: 0 5px;
+				border: 1px solid gray;
+				border-radius: 8px;
+				-moz-border-radius: 8px;
+				max-width: 260px;
+				word-wrap: break-word;
+			}
+			.time {
+				padding: 0 5px;
+			}
+			
+			
+			.onlineUser{
+				position: relative;
+				width: 160px;
+				float: right;
+				height: 100%;
+			}
+			.onlineTitle{
+				border: 1px solid;
+				text-align: center;
+				width: 159px;
+				background-color: beige;
+			}
+			.userlist{
+				list-style: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="chatbox">
+			<div id="chat">
+				<div id="recive">
+					<div class="right">
+						<span class="time">15:05:06</span>
+						<div>
+							<div class="rightUser">jeck&nbsp;</div>
+							<div class="rightMsg">aa</div>
+						</div>
+					</div>
+
+					<div class="left">
+						<span class="time">15:05:06</span>
+						<div>
+							<div class="leftUser">&nbsp;jeck</div>
+							<div class="leftMsg">aaddfdfdfdfdfdadsfadfasdfadfdfdfdfdasdfasdfasdfasd</div>
+						</div>
+					</div>
+
+					<div class="right">
+						<span class="time">15:05:06</span>
+						<div>
+							<div class="rightUser">jeck</div>
+							<div class="rightMsg">aa</div>
+						</div>
+					</div>
+
+					<div class="left">
+						<span class="time">15:05:06</span>
+						<div>
+							<div class="leftUser">jeck:</div>
+							<div class="leftMsg">aaddfdfdfdfdfdadsfadfasdfadfdfdfdfdasdfasdfasdfasd</div>
+						</div>
+					</div>
+				</div>
+				<div id="send">
+					<textarea id="input" placeholder="发送信息"></textarea>
+				</div>
+				<span class="btns">
+					<button id="sendBtn">发送</button>
+					<button id="sendAllBtn">ToAll</button>
+				</span>
+			</div>
+			<div id="online" class="onlineUser">
+				<div class="onlineTitle">在线用户</div>
+				<ul class="userlist">
+					<li>jeck</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

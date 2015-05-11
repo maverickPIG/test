@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Test Cross-domain communication using HTML5</title>
+		<script src="../../js/lib/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!-- 通过 iframe 嵌入子页面 -->
+		<iframe src="http://www.b.com:8020/testHtml5/page/crossDomain/b.html" name="frameB" id="otherPage"></iframe>
+		<br/>
+		<br/>
+		<h2>a.html</h2>
+		<br />
+		<input type="text" id="message">
+		<input type="button" value="Send to b.com" onclick="sendIt()" />
+	</body>
+		<script type="text/JavaScript">
+			function sendIt(){ 
+				// 通过 postMessage 向子窗口发送数据 ,第二个参数需要带上协议
+				window.frames["frameB"].window.postMessage($("#message").val(),"http://www.b.com:8020")
+			}
+		</script>
+</html>
