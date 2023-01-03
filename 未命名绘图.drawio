@@ -1,1 +1,29 @@
-<mxfile host="app.diagrams.net" modified="2023-01-03T06:02:00.216Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15" etag="yEjSi2B5F36y6YiIooUj" version="20.8.0" type="github"><diagram id="oBjf30wMF8gnnsF7-FTI" name="第 1 页">7ZZNc5swEIZ/DUd3zFdsH/2Rtodmmqk70+QoozUoFUgjRLD767sCAQbi2E2nnR56QvtKi1bvs3w4/jo9fFBEJneCAne8KT04/sbxPHfqhXgxytEqCxMaJVaMWq0TtuwHNKlWLRiFvLdQC8E1k30xElkGke5pRClR9pftBe/vKkkMI2EbET5WvzGqk1qde7NO/wgsTpqd3ZtFPZOSZrE9SZ4QKsoTyb91/LUSQtej9LAGbtxrfKnz3p+ZbQtTkOlrEoKHO/a13MhyFuxJ+nQUj0s5sXieCS/sgR1/+Xn3ZKysq9bHxgo8gDTDIuWf2B44yzBaSVAsBQ0KZ7iV7zttVSZMw1aSyKSW2CWoJTrlGLk4RG6aYIpqY86JzNmu2nWKioKoUDl7hi+Q1+1hVFFos9O6xW5EexhQGg5nXXJb77FrQWCd6ohLmoS5xWUbdhI2/MoOvzu1WnKC3m9EYlsubm/eUcGBBfMLkG7+Q+pDCmb/HqTZGNKQzYmjUrBMVyWEKyfcDBAJpRMRi4zwU0hXGXe+gc67GfbMdF/0cmzl/E85OR85SVkuiY6S1xw1vjB8by85izPUdkJrkeIEZHRpPgRG4yL6XklY54Ptxyp4bPpYFBkF2mtVoINPhCYqhtf8no252NRcFCqCSy/kMSoFnGh8vPrftxect6n3pr9OEA8YT4Lhc1AXZtMGANs63s50MWKqQBcq+12iQgJOrSjJk4qaW0/b/4i5iQ5Mt6hxXJF+twivhX2R2HnYF/vkL8H2vaB/j7qwN8DGsPthqZd3/33+7U8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-03T06:05:27.707Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15" etag="z0ZMLzNIKiJeYVE2iHeE" version="20.8.0" type="github">
+  <diagram id="oBjf30wMF8gnnsF7-FTI" name="第 1 页">
+    <mxGraphModel dx="1025" dy="1922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4XMiTwDpw74famjyoYAp-5" value=":Object" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="180" y="-520" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="4XMiTwDpw74famjyoYAp-6" value=":Object" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="470" y="-520" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="4XMiTwDpw74famjyoYAp-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="4XMiTwDpw74famjyoYAp-6" vertex="1">
+          <mxGeometry x="45" y="120" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4XMiTwDpw74famjyoYAp-8" value="dispatch" style="html=1;verticalAlign=bottom;endArrow=block;entryX=0;entryY=0;rounded=0;" parent="1" source="4XMiTwDpw74famjyoYAp-5" target="4XMiTwDpw74famjyoYAp-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="-400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4XMiTwDpw74famjyoYAp-9" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0;exitY=0.95;rounded=0;" parent="1" source="4XMiTwDpw74famjyoYAp-7" target="4XMiTwDpw74famjyoYAp-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="445" y="-324" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
